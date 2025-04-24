@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, footer, h1 {
+    margin: 0;
+}
+
+#leiaute-flex {
+    display: flex;
+}
+
+main {
+    width: 55%;
+    margin: auto;
+}
+
+aside {
+    width: 15%;
+    margin-right: 2rem;
+}
+
+.title-aside{
+    font-size:1rem;
+    justify-content: center;
+}
+aside li{
+    padding-bottom: 0.75rem;
+}
+
+nav {
+    margin-left: 2rem;
+    width: 15%
+}
+
+nav li{padding-bottom: 0.75rem;}
+
+body {
+    /*background-image: linear-gradient(to left, gray, black);*/
+    background-image: gray;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+   
+}
+
+/*
+  marging, padding border podem ser configuradas individualmente ou pela ordem,
+  preferencialmente no sentido horário: top, right, bottom, left
+  */
+.bordas {
+    border-top: 1px dotted gray;
+    border-right: 1px solid red;
+    border-bottom: 1px dashed green;
+    border-left: 1px inset blue;
+}
+
+.margens {
+    margin: 50px;   
+    border: 1px solid white;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+article, nav, aside {
+    background-color: lightgray;
+    color: black;
+    padding: 1rem;
+    margin-top: 2.0rem;
+    margin-bottom: 1.0rem;
+    border-radius: 1%;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    
+}
+.comprimento {
+    border: 1px solid gray;
+    
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.autor-data {
+    text-align: right;
+    font-style: italic;
+    color: rgb(117, 108, 108)
+}
+
+.entre-linhas {
+    line-height: 2.0;
+}
+
+.entre-letras {
+    letter-spacing: 0.3rem;
+} 
+
+#titulo-principal {
+    padding-top: 0.5rem;
+    text-align: center;
+    background-image: linear-gradient(to left, black, gray);
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    border-bottom: 1px solid black;
+}
+
+
+.negrito {
+    font-weight: bolder;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.sublinhado{
+    text-decoration: underline;
+}
+
+.vermelho {
+    color: #ff0000;
+}
+
+.verde {
+    color: #00ff00;
+}
+
+.azul {
+    color: #0000ff;
+}
+
+.cinza-claro {
+    color: #aaa 
+}
+
+.cinza-escuro {
+    color: #444;
+}
+
+.times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.verdana {
+    font-family: verdana;
+}
+
+.playwrite {
+    font-family: "Playwrite MX Guides", cursive;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+footer {
+    font-size: 1.5rem;
+    background-color: black;
+    padding: .5rem;
+    background-image: linear-gradient(to left, black, gray);
+}
+
+.lista-ordenada {
+    list-style-type: lower-roman;
+    margin-left: 2rem;
+}
+
+.lista-nao-ordenada {
+    list-style-type: square;
+    margin-left: 2rem;
+}
+
+.lista-com-imagens {
+    list-style-image: url('imagens/seta1.png');
+    margin-left: 2rem;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    color: rgb(125, 123, 123);
+    text-decoration: underline;
+}   
+
+.lista-de-links li {
+    line-height: 2;
+}
+
+li a img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+table {
+    width: 70%;
+    margin: auto;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+.tabela-1 td {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+}
+
+.linha-cinza {
+    background-color: #b1b0b0;
+    color: black;
+}
+
+.linha-branca {
+    background-color: #fff;
+    color: black;
+}
+
+#campos-modernos form label[for]{
+    display: inline-block;
+    padding-bottom: 1.5rem;
+    font-weight: bolder;
+}
+
+#campos-modernos form label[for]{
+    display: inline-block;
+    padding-bottom: 1.5rem;
+    font-weight: bolder;
+}
+#campos-modernos form input{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.form-classico p{
+    font-weight: bolder;
+}
+
+.form-classico .input_radio-idiomas{
+    padding-top: 1.5rem;
+}
+
+
+#campos-modernos .button-validar{
+    height:2.5rem;
+    width: 15%;
+    border-radius: 5px;
+    border-style: none;
+    background-color: blue;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#ifpi{text-align: center;}
+#ifpi .link{color: #0000ff; font-size: small;}
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+}
