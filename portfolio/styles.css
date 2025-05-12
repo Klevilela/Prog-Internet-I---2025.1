@@ -1,0 +1,149 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, #E79100 0%, #4940CD 100%);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Espaçamento entre seções */
+}
+
+.secao-portfolio-kleberson,
+.secao-portfolio-roniel {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+}
+
+.secao-portfolio-kleberson article,
+.secao-portfolio-roniel article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.secao-portfolio-kleberson article > img,
+.secao-portfolio-roniel article > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid white;
+}
+
+.secao-portfolio-kleberson article h1,
+.secao-portfolio-roniel article h1 {
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+.secao-portfolio-kleberson article h3,
+.secao-portfolio-roniel article h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.secao-portfolio-kleberson article ol,
+.secao-portfolio-roniel article ol {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.secao-portfolio-kleberson article ul,
+.secao-portfolio-roniel article ul {
+    list-style: none;
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+.container-portfolio {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.container-portfolio > div {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.container-portfolio h2,
+.container-portfolio h3 {
+    margin-bottom: 10px;
+}
+
+.container-portfolio p {
+    margin: 5px 0;
+    color: #f1f1f1; /* Contraste mais leve com os títulos */
+}
+
+.projeto-Kleberson .projeto-titulo,
+.projeto-Roniel .projeto-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.projeto-Kleberson p:last-of-type,
+.projeto-Roniel p:last-of-type {
+    margin-top: 20px; /* Espaçamento entre descrição e link */
+}
+
+
+.projeto-Kleberson p:last-of-type,
+.projeto-Roniel p:last-of-type {
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px 10px;
+        gap: 60px;
+    }
+
+    .secao-portfolio-kleberson article img,
+    .secao-portfolio-roniel article img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projeto-Kleberson h2,
+    .projeto-Roniel h2 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .container-portfolio > div {
+        padding: 15px;
+    }
+
+    .secao-portfolio-kleberson article h1,
+    .secao-portfolio-roniel article h1 {
+        font-size: 2rem;
+    }
+
+    .secao-portfolio-kleberson article ul,
+    .secao-portfolio-roniel article ul {
+        font-size: 1rem;
+    }
+}
