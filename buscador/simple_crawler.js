@@ -152,6 +152,8 @@ function buscar(termos) {
       
       // 3. Penalização por autoreferência
       if (a.hasSelfReference !== b.hasSelfReference) return a.hasSelfReference ? 1 : -1;
+
+      if (b.totalTermos !== a.totalTermos) return b.totalTermos - a.totalTermos;
       
       return 0;
     });
