@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Atividade DOM 02</h1>
+    <br>
+    <br>
+    <h3>Questão 1</h3>
+    <script src = "scripts.js" defer></script>
+    <button id="botaoErro">Mostrar Erro</button>
+    <!--div id="mensagemErro" class="oculto">O campo deve ser preenchido</div-->
+    <div id="mensagemErro" class="oculto"></div>
+
+    <hr>
+
+    <h3>Questão 2</h3>
+    <label for="caixaDeTexto">Digite o texto:</label>
+    <input type="text" id="caixaDeTexto">
+    <button id="botaoExibir">Exibir</button>
+    <div id="conteudo" class="mensagem"></div>
+
+    <hr>
+
+    <h3>Questão 3</h3>
+    <input placeholder="Número de interações" id="num_interacoes">
+    <br>
+    <br>
+    <input placeholder="Número de visualizações" id="num_visualizacoes">
+    <br>
+    <br>
+    <button id="btn_calcular_engajamento">Calcular</button>
+    <div id="erro_entrada" class="mensagem"></div>
+    <div id="res_engajamento"></div>
+
+    <hr>
+
+    <h3>Questão 4</h3>
+    <input type="file" accept="image/*" id="uploadImagem" placeholder="imagem">
+    <br>
+    <br>
+    <br>
+    <button id="btn_carrega_img">Carregar imagem</button>
+    <div id="resultado"></div>
+
+    <hr>
+
+    <br>
+
+    <h3>Questão 5</h3>
+    <select class="fotos" name="fotos">
+        <option value="">Selecionar foto</option>
+        <option value="casa.jpg">Foto 1</option>
+        <option value="flamengo.png">Foto 2</option>
+        <option value="gato.jpg">Foto 3</option>
+    </select>
+
+    <div class="resultadoFotos"></div>
+
+    <hr>
+    <br>
+    <h3>Questão 6</h3>
+    <div>
+        <input type="checkbox" id="facebook" name="redesSociais" value="Facebook">
+        <label for="facebook">Facebook</label>
+    </div>
+    <div>
+        <input type="checkbox" id="twitter" name="redesSociais" value="Twitter">
+        <label for="twitter">Twitter</label>
+    </div>
+    <div>
+        <input type="checkbox" id="instagram" name="redesSociais" value="Instagram">
+        <label for="instagram">Instagram</label>
+    </div>
+    <div>
+        <input type="checkbox" id="linkedin" name="redesSociais" value="LinkedIn">
+        <label for="linkedin">LinkedIn</label>
+    </div>
+    <div>
+        <input type="checkbox" id="tiktok" name="redesSociais" value="TikTok">
+        <label for="tiktok">TikTok</label>
+    </div>
+    <div id="msgErro"></div>
+    <div id="redesSelecionadas"></div>
+    <button type="button" id="enviarBtn">Enviar Seleção</button>
+
+    <hr>
+    <br>
+
+    <h3>Questão 7, Questão 8 e Questão 9</h3>
+    <input id="input_hashtag" placeholder="Adicionar Hashtag">
+    <br>
+    <div id="erroSelect" class="mensagem"></div>
+    <select name="hashtags" id="selectHashtag" size="5"></select>
+    <br>
+    <br>
+    <button id="btnAdicionarHashtag">Adicionar Hashtag</button>
+    <br>
+    <br>
+    <button id="btnRemoverHashtag">Remover Hashtag</button>
+    <br>
+    <br>
+    <hr>
+    <h3>Questão 10 e Questão 11</h3>
+    <h1>Mover Ativos Financeiros entre Carteiras</h1>
+    <div class="container">
+        <div>
+            <label for="ativosDisponiveis">Ativos Disponíveis:</label>
+            <br>
+            <br>
+            <select id="ativosDisponiveis" size="10" multiple>
+                <option value="AAPL">Apple (AAPL)</option>
+                <option value="GOOGL">Google (GOOGL)</option>
+                <option value="AMZN">Amazon (AMZN)</option>
+                <option value="MSFT">Microsoft (MSFT)</option>
+                <option value="TSLA">Tesla (TSLA)</option>
+                <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+                <option value="FB">Meta (FB)</option>
+                <option value="V">Visa (V)</option>
+                <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                <option value="WMT">Walmart (WMT)</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button id="moverParaDireitaBtn">>></button>
+            <br>
+            <br>
+            <button id="moverParaEsquerdaBtn" disabled>&lt;&lt;</button>
+        </div>
+
+        <div>
+            <label for="carteiraInvestimentos">Carteira de Investimentos:</label>
+            <br>
+            <select id="carteiraInvestimentos" class="msgErroInv" size="10" multiple></select>
+            <div id="mensagem"></div>
+        </div>
+    </div>
+</body>
+</html>
