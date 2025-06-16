@@ -1,0 +1,21 @@
+.oculto {
+    display: none;
+}
+
+#mensagemErro, .mensagem, .erroInv, #mensagem {
+    color: red;
+    margin-top: 10px;
+}
+
+.resultadoFotos{
+    margin-top: 15px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: justify;         
+    justify-content:left; 
+    margin-top: 1rem;
+}
