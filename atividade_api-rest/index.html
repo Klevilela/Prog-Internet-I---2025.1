@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"defer></script>
+    <h1>Consumindo API</h1>
+    <br>
+    <br>
+    <h3>Random fox - API que exibe fotos de raposas</h3>
+    <button id="botaoMostrarLobo">Mostrar foto</button>
+    <img id="imgFox" src="" alt="">
+    <hr>
+    <br>
+
+    <h3>JSON Placeholder - API que simula requisições POST</h3>
+    <input id="tituloPost" placeholder="Titulo">
+    <br>
+    <br>
+    <textarea placeholder="Conteudo do post" id="conteudo"></textarea>
+    <br>
+    <br>
+    <button id="btnEnviaPost">Enviar post</button>
+    <p id="resposta"></p>
+    <hr>
+
+    <h3>meowfacts - API que retorna fatos aleatórios sobre gatos</h3>
+    <button id="btnPedirFato">Pedir fato</button>
+    <p id="catFato"></p>
+    <br>
+    <br>
+    <hr>
+    <h3>Comandos para requisição via curl</h3>
+
+    <p>curl https://randomfox.ca/floof/</p>
+    <p>curl https://meowfacts.herokuapp.com/?lang=por-br</p>
+    <p>Linux: curl -X POST https://jsonplaceholder.typicode.com/posts \ -H "Content-Type: application/json" \ -d '{"title":"Post via curl","body":"Enviado pelo terminal","userId":1}'</p>
+    <p>Windows: curl -X POST https://jsonplaceholder.typicode.com/posts -H "Content-Type: application/json" -d "{\"title\":\"Post via curl\",\"body\":\"Enviado pelo terminal\",\"userId\":1}"</p>
+</body>
+</html>
