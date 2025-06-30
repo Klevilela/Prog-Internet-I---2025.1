@@ -1,0 +1,1 @@
+const CONFIG = {apiKey:'4d6ca1683cf76b93e79d4a3b0fc9419c'}
