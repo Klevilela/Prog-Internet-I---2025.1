@@ -71,3 +71,45 @@ async function pedirFato() {
         catFato.innerText = 'Erro'
     }
 }
+
+const btnBuscarNoticia = getById(('btnBuscarNoticia'))
+
+btnBuscarNoticia.addEventListener('click', mostrarNoticias)
+
+const resultado = getById('resultado')
+const apiKey = CONFIG.apiKey
+
+async function mostrarNoticias(){
+    try {
+        const category = 'general'
+        const url = 'https://gnews.io/api/v4/search?q='+category+'&lang=pt&country=br&max=10&apikey=' + apiKey
+        const response = await fetch(url)
+
+        const json = await response.json()
+        console.log(json)
+        const artigos = json.articles
+
+        if (!json.articles||artigos.length ===0){
+            resultado.textContent = 'Nenhuma notícia encontrada'
+            return
+        }
+
+        artigos.map(a =>{
+            resultado.innerHTML +=
+            `
+             <h1>${a.title}</h1>
+             <br>
+             <h4>${a.description}</h4>
+             <br>
+             <p>${(a.content||'conteúdo indisponível').split('[')[0].trim()}</p>
+             <br>
+             <p>Publicado em: ${a.publishedAt}
+             <a href="${a.url}" target='_blank'>Ler notícia completa</a>
+             <hr>
+            `
+        })
+        
+    } catch (e) {
+        resultado.textContent = 'Erro.'
+    }
+}
