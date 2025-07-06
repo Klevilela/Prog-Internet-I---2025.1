@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Atividade DOM 03</title>
+</head>
+<body>
+    <script src="scripts.js" defer></script>
+    
+    <h1>Gerenciamento de Tarefas</h1>
+    <div id="statusResmo" class="resumo">
+        <p>Pendentes: <span id="qdtPendentes">0</span></p>
+        <p>Finalizadas: <span id="qdtFinalizadas">0</span></p>
+        <p>Excluídas: <span id="qdtExcluidas">0</span></p>
+    </div>
+    <div>
+        <label for="ordenarPor">Ordenar por</label>
+        <select id="ordenarPor">
+            <option value="id">ID</option>
+            <option value="descricao">Descrição(A-Z)</option>
+            <option value="data">Data(Mais recentes primeiro)</option>
+        </select>
+        <label for="filtarPor">Filtrar por</label>
+        <select id="filtrarPor">
+            <option value="todas">Todas</option>
+            <option value="pendentes">Pendentes</option>
+            <option value="finalizadas">Finalizadas</option>
+        </select>
+
+    </div>
+    <div>
+        <label for="descricaoTarefa">Descrição da Tarefa:</label>
+        <input type="text" id="descricaoTarefa" placeholder="Ex: Concluir relatório">
+        <label for="dataInicio">Data de início</label>
+        <input type="date" name="" id="inputData">
+        
+    </div>
+    <button id="adicionarBtn">Adicionar Tarefa</button>
+    <table id="tabelaTarefas">
+        <thead>
+            <tr>
+                <th id="idTarefa">ID</th>
+                <th id="descricao">Descrição</th>
+                <th id="dataInicio">Data de Início</th>
+                <th id="dataConclusao">Data de Conclusão</th>
+                <th id="acoes">Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
