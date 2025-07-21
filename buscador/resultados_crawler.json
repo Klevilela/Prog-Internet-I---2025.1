@@ -1,0 +1,31 @@
+{
+  "urlInicial": "https://klevilela.github.io/Prog-Internet-I---2025.1/buscador/paginas/blade_runner.html",
+  "totalPaginas": 5,
+  "paginas": [
+    {
+      "url": "https://klevilela.github.io/Prog-Internet-I---2025.1/buscador/paginas/blade_runner.html",
+      "titulo": "Blade Runner",
+      "totalLinks": 4
+    },
+    {
+      "url": "https://klevilela.github.io/Prog-Internet-I---2025.1/buscador/paginas/matrix.html",
+      "titulo": "Matrix",
+      "totalLinks": 3
+    },
+    {
+      "url": "https://klevilela.github.io/Prog-Internet-I---2025.1/buscador/paginas/interestelar.html",
+      "titulo": "Interestelar",
+      "totalLinks": 3
+    },
+    {
+      "url": "https://klevilela.github.io/Prog-Internet-I---2025.1/buscador/paginas/duna.html",
+      "titulo": "Duna",
+      "totalLinks": 2
+    },
+    {
+      "url": "https://klevilela.github.io/Prog-Internet-I---2025.1/buscador/paginas/mochileiro.html",
+      "titulo": "O Guia do Mochileiro das Galáxias",
+      "totalLinks": 3
+    }
+  ]
+}
